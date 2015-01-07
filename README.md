@@ -60,8 +60,11 @@ Reach me in [Twitter] or email in soukron _at_ gmbros.net
  - https://github.com/brandur/tmux-extra
 
 ### License
-GNU
+Nothing to be licensed, but just in case, everything in this repo is licensed under GNU GPLv3 
+license. You can read the document [here].
 
 [tmux]:http://tmux.sourceforge.net
 [tmux-mem-cpu-load]:https://github.com/thewtex/tmux-mem-cpu-load
 [Twitter]:http://twitter.com/soukron
+[here]:http://gnu.org/licenses/gpl.html
+
