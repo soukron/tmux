@@ -1,5 +1,26 @@
 # Tmux Environment
 
+### Overview
+This is my personal tmux configuration after a while using this manager.
+
+It includes:
+ - mouse integration to select/resize panes and text selection
+ - status bar with hostname, system information and date (see Dependencies below)
+ - xclip integration (see Dependencies below)
+ - start numbering windows at 1 instead of 0
+ - vi mode enabled
+ - keybinds to:
+   - split window h**o**rizontally (C-b o) in addition to default (C-b ")
+   - split window v**e**rtically (C-b e) in addition to default (C-b %)
+   - reload configuration file (C-b r)
+   - automatically start a SSH connection (C-b R)
+   - turn on/off pane synchronization (C-b S and C-b s respectively)
+   - start text selection like in vi (v key when in copy-mode)
+   - copy text selection to system clipboard (y key after begin-selection)
+   - send prefix key to a nested tmux session (C-a) instead of (C-b C-b)
+   
+Also I include a launcher ([tmx]) which starts (or resumes if possible) a session based in a given name.
+
 ### Dependencies
 Install **[tmux]** 2.2+:
 
@@ -42,9 +63,9 @@ case $TERM in
         export PROMPT_COMMAND
         ;;
     screen)
-      TITLE=$(hostname -s)                                                      
-      PROMPT_COMMAND='/bin/echo -ne "\033k${TITLE}\033\\"'                      
-      export PROMPT_COMMAND
+        TITLE=$(hostname -s)                                                      
+        PROMPT_COMMAND='/bin/echo -ne "\033k${TITLE}\033\\"'                      
+        export PROMPT_COMMAND
         ;;
 esac
 ```
@@ -67,4 +88,4 @@ license. You can read the document [here].
 [tmux-mem-cpu-load]:https://github.com/thewtex/tmux-mem-cpu-load
 [Twitter]:http://twitter.com/soukron
 [here]:http://gnu.org/licenses/gpl.html
-
+[tmx]:http://github.com/brandur/tmux-extra
