@@ -1,7 +1,7 @@
 # Tmux Environment
 
 ### Dependencies
-Install **[tmux]**:
+Install **[tmux]** 2.2+:
 
 ```sh
 $ sudo yum install tmux
