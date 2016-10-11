@@ -18,7 +18,7 @@ Get the source code:
 
 ```sh
 $ cd ~
-$ git clone https://gitlab.com/soukron/tmux.git
+$ git clone https://github.com/soukron/tmux.git
 ```
 Copy (or symlink) the files:
 
